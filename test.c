@@ -87,10 +87,10 @@ void ShellSort(int a[],int n)
 void BubbleSort(int a[],int n)
 {
     int i,j,temp;
-    for(i=1;i<n-1;i++)
+    for(i=0;i<n-1;i++)
     {
         int flag=0;
-        for(j=i-1;j>i;j--)
+        for(j=n-1;j>i;j--)
         {
             if(a[j] < a[j-1])
             {
@@ -128,6 +128,52 @@ void QuickSort(int a[],int low, int high)
     }
 }
 
+
+//将以k为根的子树调整为大根堆
+void HeadAdjust(int a[],int k,int len)
+{
+    a[0] = a[k];
+    for(int i=2*k;i<=len;i*=2)
+    {
+        if(i<len&&a[i] > a[i+1])
+        {
+            i++;
+        }
+        if(a[0] <= a[i])
+        {
+            break;
+        }
+        else
+        {
+            a[k] = a[i];
+            k = i;
+        }
+    }
+    a[k] = a[0];
+}
+
+//建立大根堆
+void BuildMaxHeap(int a[],int len)
+{
+    for(int i=len/2;i>0;i--)
+    {
+        HeadAdjust(a,i,len);
+    }
+}
+
+//堆排序的完整逻辑
+void HeapSort(int a[],int len)
+{
+    BuildMaxHeap(a,len);
+    for(int i=len;i>1;i--)
+    {
+        int temp = a[1];
+        a[1] = a[i];
+        a[i] = temp;
+        HeadAdjust(a,1,i-1);
+    }
+}
+
 void main()
 {
     int i;
@@ -135,7 +181,7 @@ void main()
     int b[11]={0,5,3,0,12,9,20,5,97,100,32};
 
     BubbleSort(a,10);
-    ShellSort(b,10);
+    HeapSort(b,10);
 
     for(i=0;i<10;i++) 
     {
