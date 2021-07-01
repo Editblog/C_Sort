@@ -9,7 +9,7 @@ void Insertsort(int a[], int n)
         if(a[i] < a[i-1])
         {
             temp = a[i];
-            for(j=i-1;j>=0 && a[j] > temp;j--)
+            for(j=i-1;j>=0&&a[j] > temp;j--)
             {
                 a[j+1] = a[j];
             }
@@ -43,7 +43,7 @@ void Insertsort2(int a[], int n)
         low = 1;
         high = i-1;
         a[0] = a[i];
-        while(low <= high)
+        while(low<=high)
         {
             mid = (low+high)/2;
             if(a[mid] > a[0])
@@ -86,11 +86,11 @@ void ShellSort(int a[],int n)
 
 void BubbleSort(int a[],int n)
 {
-    int i,j;
-    for(i=0;i<n;i++)
+    int i,j,temp;
+    for(i=1;i<n-1;i++)
     {
         int flag=0;
-        for(j=n-1;j>i;j--)
+        for(j=i-1;j>i;j--)
         {
             if(a[j] < a[j-1])
             {
@@ -107,11 +107,11 @@ void BubbleSort(int a[],int n)
 int Partition(int a[], int low, int high)
 {
     int pivot = a[low];
-    while(low < high)
+    while(low<high)
     {
-        while(low<high && a[high] >= pivot) high--;
+        while(low<high&&a[high] >= pivot) high--;
         a[low] = a[high];
-        while(low<high && a[low] <= pivot) low++;
+        while(low<high&&a[low] <= pivot) low++;
         a[high] = a[low];
     }
     a[low] = pivot;
@@ -120,7 +120,7 @@ int Partition(int a[], int low, int high)
 
 void QuickSort(int a[],int low, int high)
 {
-    if(low < high)
+    if(low<high)
     {
         int pivotpos = Partition(a,low,high);
         QuickSort(a,low,pivotpos-1);
@@ -135,9 +135,9 @@ void main()
     int b[11]={0,5,3,0,12,9,20,5,97,100,32};
 
     BubbleSort(a,10);
-    QuickSort(b,1,10);
+    ShellSort(b,10);
 
-    for(i=0;i<10;i++)
+    for(i=0;i<10;i++) 
     {
         printf("%d\t",a[i]);
     }
