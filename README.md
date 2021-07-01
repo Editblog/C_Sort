@@ -448,6 +448,36 @@ void SelectSort(int a[], int n)
 
 # 七、堆排序
 
+![image-20210701144534674](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701144534.png)
+
+## 1.什么是堆（Heap）
+
+![image-20210701144654349](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701144654.png)
+
+![image-20210701144612838](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701144612.png)
+
+![image-20210701144710878](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701144710.png)
+
+## 2.建立大根堆
+
+![image-20210701144859918](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701144859.png)
+
+![image-20210701145012182](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701145012.png)
+
+![image-20210701145040913](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701145040.png)
+
+## 3.算法效率分析
+
+![image-20210701145147467](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701145147.png)
+
+![image-20210701145203061](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701145203.png)
+
+![image-20210701145213798](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701145213.png)
+
+>   稳定性：不稳定
+
+## 4.代码测试
+
 ```c
 #include <stdio.h>
 
@@ -495,13 +525,10 @@ void HeapSort(int a[],int len)
         HeadAdjust(a,1,i-1);    //把剩余的待排序元素整理成堆
     }
 }
-
 void main()
 {
     int a[11]={0,10,29,0,1,23,45,8,4,2,1};
-
     HeapSort(a, 10);
-
     for(int i=0;i<11;i++)
     {
         printf("%d\t",a[i]);
@@ -509,4 +536,92 @@ void main()
     printf("\n");
 }
 ```
+
+## 5.堆的插入
+
+以小根堆为例：
+
+对于小根堆，新元素放到表尾，与父节点对比，若新元素比父节点更小，则将二者互换。新元素就这样一路“上升”，直到无法继续上升为止
+
+## 6.堆的删除
+
+以小根堆为例：
+
+被删除的元素用堆底元素替代，然后让该元素不断“下坠”，直到无法下坠为止
+
+## 7.知识回顾与重要考点
+
+![image-20210701145313000](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701145313.png)
+
+![image-20210701151154798](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701151154.png)
+
+# 八、归并排序
+
+## 1.什么是归并排序
+
+![image-20210701165158900](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701165158.png)
+
+![image-20210701165214015](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701165214.png)
+
+## 2.算法效率分析
+
+![image-20210701165325656](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701165325.png)
+
+## 3.代码测试
+
+```c
+#include <stdio.h>
+
+int b[11];
+//a[low...mid]和a[mid+1...high]各自有序，将两个部分归并
+void Merge(int a[],int low,int mid,int high)
+{
+    int i,j,k;
+    for(k=low;k<=high;k++)
+    {
+        b[k] = a[k];            //将a中所有元素复制到b中
+    }
+    for(i=low,j=mid+1,k=i;i<=mid&&j<=high;k++)
+    {
+        if(b[i] <= b[j])
+        {
+            a[k] = b[i++];      //将最小值复制到a中
+        }
+        else
+        {
+            a[k] = b[j++];
+        }
+    }
+    while(i<=mid)   a[k++] = b[i++];
+    while(j<=high)  a[k++] = b[j++];
+}
+
+void MergeSort(int a[],int low,int high)
+{
+    if(low<high)
+    {
+        int mid=(low+high)/2;       //从中间划分
+        MergeSort(a,low,mid);       //对左半部分归并排序
+        MergeSort(a,mid+1,high);    //对右半部分归并排序
+        Merge(a,low,mid,high);      //归并
+    }
+}
+
+void main()
+{
+    int a[10]={10,2,1,9,6,7,5,0,3,2};
+
+    MergeSort(a,0,9);
+
+    for(int i=0;i<10;i++) 
+    {
+        printf("%d\t",a[i]);
+    }
+    printf("\n");
+}
+```
+
+## 4.知识回顾与重要考点
+
+![image-20210701165442057](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701165442.png)
 
