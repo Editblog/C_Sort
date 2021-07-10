@@ -23,7 +23,7 @@ void printstring(int a[], int n)
     printf("\n");
 }
 
-//希尔排序
+//简单选择排序
 void SelectSort(int a[], int n)
 {
     int i,j;
