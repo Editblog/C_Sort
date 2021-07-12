@@ -3,7 +3,7 @@
 int b[11];
 
 
-
+//归并排序
 void Merge(int a[],int low,int mid,int high)
 {//a[low...mid]和a[mid+1...high]各自有序，将两个部分归并
     int i,j,k;
