@@ -6,7 +6,7 @@
 -   空间复杂度
 -   稳定性
 
-<img src="https://raw.githubusercontent.com/w/PicGo/main/img/20210626111747.png" alt="image-20210626111747688"  />
+<img src="https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210626111747.png" alt="image-20210626111747688"  />
 
 ## 2.排序算法的分类
 
