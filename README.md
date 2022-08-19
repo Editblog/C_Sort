@@ -6,18 +6,18 @@
 -   空间复杂度
 -   稳定性
 
-<img src="https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210626111747.png" alt="image-20210626111747688"  />
+<img src="https://raw.githubusercontent.com/w/PicGo/main/img/20210626111747.png" alt="image-20210626111747688"  />
 
 ## 2.排序算法的分类
 
 -   内部排序
 -   外部排序
 
-<img src="https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210626111855.png" alt="image-20210626111855266"  />
+<img src="https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210626111855.png" alt="image-20210626111855266"  />
 
 ## 3.知识回顾与重要考点
 
-<img src="https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210626111935.png" alt="image-20210626111935675"  />
+<img src="https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210626111935.png" alt="image-20210626111935675"  />
 
 # 二、插入排序
 
@@ -103,7 +103,7 @@ void InsertSort2(int a[], int n)
 
 ## 4.知识回顾与重要考点
 
-![image-20210626135434482](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210626135434.png)
+![image-20210626135434482](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210626135434.png)
 
 ## 5.测试代码
 
@@ -258,7 +258,7 @@ void Shellsort(int a[], int n)
 
 **知识回顾与重要考点**
 
-![image-20210626200257887](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210626200257.png)
+![image-20210626200257887](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210626200257.png)
 
 # 四、冒泡排序
 
@@ -310,7 +310,7 @@ void main()
 
 **知识回顾与重要考点**
 
-![image-20210626204924487](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210626204924.png)
+![image-20210626204924487](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210626204924.png)
 
 # 五、快速排序
 
@@ -358,17 +358,17 @@ void main()
 
 ## 1.时间复杂度分析
 
-![image-20210626213801297](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210626213801.png)
+![image-20210626213801297](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210626213801.png)
 
-![image-20210626213618878](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210626213618.png)
+![image-20210626213618878](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210626213618.png)
 
 ### a.比较好的情况
 
-![image-20210626213630164](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210626213630.png)
+![image-20210626213630164](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210626213630.png)
 
 ### b.最坏的情况
 
-![image-20210626213722500](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210626213722.png)
+![image-20210626213722500](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210626213722.png)
 
 
 
@@ -378,7 +378,7 @@ void main()
 
 ## 2.知识回顾与重要考点
 
-![image-20210626213400604](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210626213400.png)
+![image-20210626213400604](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210626213400.png)
 
 # 六、简单选择排序
 
@@ -438,41 +438,41 @@ void SelectSort(int a[], int n)
 
 ## 2.算法性能分析
 
-![image-20210627202749017](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210627202749.png)
+![image-20210627202749017](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210627202749.png)
 
-![image-20210627202804392](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210627202804.png)
+![image-20210627202804392](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210627202804.png)
 
 ## 3.知识回顾与重要考点
 
-![image-20210627202827888](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210627202827.png)
+![image-20210627202827888](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210627202827.png)
 
 # 七、堆排序
 
-![image-20210701144534674](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701144534.png)
+![image-20210701144534674](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701144534.png)
 
 ## 1.什么是堆（Heap）
 
-![image-20210701144654349](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701144654.png)
+![image-20210701144654349](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701144654.png)
 
-![image-20210701144612838](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701144612.png)
+![image-20210701144612838](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701144612.png)
 
-![image-20210701144710878](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701144710.png)
+![image-20210701144710878](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701144710.png)
 
 ## 2.建立大根堆
 
-![image-20210701144859918](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701144859.png)
+![image-20210701144859918](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701144859.png)
 
-![image-20210701145012182](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701145012.png)
+![image-20210701145012182](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701145012.png)
 
-![image-20210701145040913](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701145040.png)
+![image-20210701145040913](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701145040.png)
 
 ## 3.算法效率分析
 
-![image-20210701145147467](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701145147.png)
+![image-20210701145147467](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701145147.png)
 
-![image-20210701145203061](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701145203.png)
+![image-20210701145203061](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701145203.png)
 
-![image-20210701145213798](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701145213.png)
+![image-20210701145213798](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701145213.png)
 
 >   稳定性：不稳定
 
@@ -551,21 +551,21 @@ void main()
 
 ## 7.知识回顾与重要考点
 
-![image-20210701145313000](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701145313.png)
+![image-20210701145313000](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701145313.png)
 
-![image-20210701151154798](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701151154.png)
+![image-20210701151154798](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701151154.png)
 
 # 八、归并排序
 
 ## 1.什么是归并排序
 
-![image-20210701165158900](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701165158.png)
+![image-20210701165158900](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701165158.png)
 
-![image-20210701165214015](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701165214.png)
+![image-20210701165214015](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701165214.png)
 
 ## 2.算法效率分析
 
-![image-20210701165325656](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701165325.png)
+![image-20210701165325656](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701165325.png)
 
 ## 3.代码测试
 
@@ -623,5 +623,5 @@ void main()
 
 ## 4.知识回顾与重要考点
 
-![image-20210701165442057](https://raw.githubusercontent.com/Editblog/PicGo/main/img/20210701165442.png)
+![image-20210701165442057](https://raw.githubusercontent.com/wushuai2000/PicGo/main/img/20210701165442.png)
 
